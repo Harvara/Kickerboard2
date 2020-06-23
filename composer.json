@@ -1,4 +1,11 @@
 {
+    "autoload": {
+        "psr-4": {
+            "DTO\\": "src/DTO/",
+            "Domain\\": "src/Domain/",
+            "Controller\\": "src/Controller/"
+        }
+    },
     "require": {
         "slim/slim": "3.*"
     }

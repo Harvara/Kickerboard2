@@ -15,4 +15,10 @@ $app->get("/hello/{name}", function (Request $request, Response $response, array
     return $response;
 });
 
+
+$app->get("api/Player/{mode}" function ( Request $request, Response $response, array $args){
+   $mode = $args["mode"];
+    return
+});
+
 $app->run();
