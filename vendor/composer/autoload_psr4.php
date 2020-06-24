@@ -13,5 +13,6 @@ return array(
     'Factories\\' => array($baseDir . '/src/Factories'),
     'Domain\\' => array($baseDir . '/src/Domain'),
     'DTO\\' => array($baseDir . '/src/DTO'),
+    'DAO\\' => array($baseDir . '/src/DAO'),
     'Controller\\' => array($baseDir . '/src/Controller'),
 );

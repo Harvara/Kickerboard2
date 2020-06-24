@@ -29,6 +29,7 @@ class ComposerStaticInit793543920e597d7b0b8c6a1a78bd0701
         array (
             'Domain\\' => 7,
             'DTO\\' => 4,
+            'DAO\\' => 4,
         ),
         'C' => 
         array (
@@ -64,6 +65,10 @@ class ComposerStaticInit793543920e597d7b0b8c6a1a78bd0701
         'DTO\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/DTO',
+        ),
+        'DAO\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/DAO',
         ),
         'Controller\\' => 
         array (

@@ -2,6 +2,8 @@
 
 namespace DTO;
 
+use DAO\CityDAO;
+
 class CityDTO
 {
     /**
@@ -46,5 +48,20 @@ class CityDTO
         $this->databaseID = $databaseID;
     }
 
+    public function __construct(array $args)
+    {
+        $cityDAO = new CityDAO();
+        $cityInstance = $cityDAO->select($args["id"]);
+        if (!$cityInstance){
+            $this->cityName=$args["name"];
+        }else{
+            $this->cityName = $cityInstance->getCityName();
+            $this->databaseID = $cityInstance->getDatabaseID();
+        }
+    }
+
+    public function getDataAsJson():string {
+        return json_encode(get_object_vars($this));
+    }
 
 }

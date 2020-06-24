@@ -18,6 +18,6 @@ class PlayerFactory implements FactoryInterface
 
     public function createNew(array $args) : Player
     {
-        return new Player($args["playername"]);
+        return new Player($args);
     }
 }

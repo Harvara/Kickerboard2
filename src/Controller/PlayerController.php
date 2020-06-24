@@ -42,7 +42,7 @@ class PlayerController implements ControllerInterface
     private function getPlayerAction(Request $request, Response $response){
         $player = (new PlayerFactory())->createNew($request->getQueryParams());
         $response->getBody()->write($player->getDataAsJson());
-        return $response;
+        return $response->withHeader("Content-type", "application/json");
     }
 
 }

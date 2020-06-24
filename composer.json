@@ -2,6 +2,7 @@
     "autoload": {
         "psr-4": {
             "DTO\\": "src/DTO/",
+            "DAO\\": "src/DAO/",
             "Domain\\": "src/Domain/",
             "Controller\\": "src/Controller/",
             "Factories\\": "src/Factories/"
