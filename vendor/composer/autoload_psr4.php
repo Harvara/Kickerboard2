@@ -9,10 +9,12 @@ return array(
     'Slim\\' => array($vendorDir . '/slim/slim/Slim'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
+    'Persistence\\' => array($baseDir . '/src/Persistence'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'Factories\\' => array($baseDir . '/src/Factories'),
     'Domain\\' => array($baseDir . '/src/Domain'),
     'DTO\\' => array($baseDir . '/src/DTO'),
     'DAO\\' => array($baseDir . '/src/DAO'),
     'Controller\\' => array($baseDir . '/src/Controller'),
+    'Config\\' => array($baseDir . '/src/Config'),
 );

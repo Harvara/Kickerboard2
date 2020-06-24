@@ -19,6 +19,7 @@ class ComposerStaticInit793543920e597d7b0b8c6a1a78bd0701
         array (
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+            'Persistence\\' => 12,
         ),
         'F' => 
         array (
@@ -34,6 +35,7 @@ class ComposerStaticInit793543920e597d7b0b8c6a1a78bd0701
         'C' => 
         array (
             'Controller\\' => 11,
+            'Config\\' => 7,
         ),
     );
 
@@ -49,6 +51,10 @@ class ComposerStaticInit793543920e597d7b0b8c6a1a78bd0701
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Persistence\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Persistence',
         ),
         'FastRoute\\' => 
         array (
@@ -73,6 +79,10 @@ class ComposerStaticInit793543920e597d7b0b8c6a1a78bd0701
         'Controller\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/Controller',
+        ),
+        'Config\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Config',
         ),
     );
 

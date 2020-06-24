@@ -4,16 +4,19 @@
 namespace DAO;
 
 use DTO\CityDTO;
+use Persistence\DatabaseConnection;
+
 
 class CityDAO implements DAOInterface
 {
 
-    public function select($identifier)
+    public function select($identifier):array
     {
+        $databaseConnection = new DatabaseConnection();
+        $databaseConnection->createSelectStatement("Cities",array("ID"=>$identifier));
+        return $databaseConnection->executeSelectStatement();
         // get Connection
         // select city with id
-        // return false
-        return false;
     }
 
     public function update($attributes)

@@ -5,7 +5,9 @@
             "DAO\\": "src/DAO/",
             "Domain\\": "src/Domain/",
             "Controller\\": "src/Controller/",
-            "Factories\\": "src/Factories/"
+            "Factories\\": "src/Factories/",
+            "Config\\": "src/Config/",
+            "Persistence\\": "src/Persistence/"
         }
     },
     "require": {

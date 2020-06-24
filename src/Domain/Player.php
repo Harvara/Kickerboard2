@@ -39,17 +39,17 @@ class Player implements PlayerInterface
         $this->lastname = $args["lastname"];
         // Refactor to Plugin later
         $this->city = new CityDTO(
-                                    array(
-                                        "id"=>$args["cityid"],
-                                        "name" => $args["cityname"]
-                                        )
-                                );
+            array(
+                "id"=>$args["cityid"],
+                "name" => $args["cityname"]
+            )
+        );
     }
 
     public function getDataAsJson():string {
         $encodedPlayerData = json_encode(get_object_vars($this));
         $decodedPlayerData = json_decode($encodedPlayerData, true);
-        $decodedPlayerData["city"] = json_decode($this->city->getDataAsJson());
+        if ($this->city){$decodedPlayerData["city"] = json_decode($this->city->getDataAsJson());}
         return json_encode($decodedPlayerData);
     }
 }
