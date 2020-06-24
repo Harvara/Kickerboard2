@@ -3,7 +3,8 @@
         "psr-4": {
             "DTO\\": "src/DTO/",
             "Domain\\": "src/Domain/",
-            "Controller\\": "src/Controller/"
+            "Controller\\": "src/Controller/",
+            "Factories\\": "src/Factories/"
         }
     },
     "require": {

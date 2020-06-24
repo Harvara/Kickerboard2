@@ -1,8 +1,8 @@
 <?php
 
-namespace Domain\Player;
+namespace Domain;
 
-use DTO\CityDTO\CityDTO;
+use DTO\CityDTO;
 
 class Player implements PlayerInterface
 {
@@ -35,5 +35,9 @@ class Player implements PlayerInterface
     public function __construct(string $playername)
     {
         $this->playername=$playername;
+    }
+
+    public function getDataAsJson():string {
+        return json_encode(get_object_vars($this));
     }
 }

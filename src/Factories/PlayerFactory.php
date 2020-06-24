@@ -1,5 +1,8 @@
 <?php
 
+namespace Factories;
+
+use Domain\Player;
 
 class PlayerFactory implements FactoryInterface
 {
@@ -13,8 +16,8 @@ class PlayerFactory implements FactoryInterface
         // TODO: Implement createFromDB() method.
     }
 
-    public function createNew(array $args)
+    public function createNew(array $args) : Player
     {
-        return new Domain\Player\Player($args["playername"]);
+        return new Player($args["playername"]);
     }
 }

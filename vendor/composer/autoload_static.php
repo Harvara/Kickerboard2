@@ -23,6 +23,16 @@ class ComposerStaticInit793543920e597d7b0b8c6a1a78bd0701
         'F' => 
         array (
             'FastRoute\\' => 10,
+            'Factories\\' => 10,
+        ),
+        'D' => 
+        array (
+            'Domain\\' => 7,
+            'DTO\\' => 4,
+        ),
+        'C' => 
+        array (
+            'Controller\\' => 11,
         ),
     );
 
@@ -42,6 +52,22 @@ class ComposerStaticInit793543920e597d7b0b8c6a1a78bd0701
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
+        'Factories\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Factories',
+        ),
+        'Domain\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Domain',
+        ),
+        'DTO\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/DTO',
+        ),
+        'Controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Controller',
         ),
     );
 
